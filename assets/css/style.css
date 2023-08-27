@@ -248,16 +248,16 @@ a {
     z-index: 9;
   }
 }
-@media (max-width: 576px) {
-  .content .hero-section .mockup img {
-    max-height: 60%;
-  }
-}
 .content .hero-section .content-wrap {
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 24px;
+}
+@media (max-width: 768px) {
+  .content .hero-section .content-wrap {
+    margin-bottom: 60px;
+  }
 }
 .content .hero-section .content-wrap h1 {
   font-size: 28px;

@@ -254,17 +254,15 @@ a {
           }
         }
       }
-      @media (max-width: 576px) {
-        img {
-          max-height: 60%;
-        }
-      }
     }
     .content-wrap {
       display: flex;
       justify-content: center;
       flex-direction: column;
       gap: 24px;
+      @media (max-width: 768px) {
+        margin-bottom: 60px;
+      }
       h1 {
         font-size: 28px;
         line-height: 52px;
