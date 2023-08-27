@@ -155,9 +155,10 @@ a {
     padding: 6px 12px;
     color: $white-color;
     font-size: 14px;
-    height: 35px;
+    height: 40px;
+    @include centerFlex();
     i {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
   .toogler {
@@ -714,11 +715,10 @@ footer {
     p {
       color: $main-color;
       margin: 0;
-      display: flex;
-      gap: 8px;
-      @media (max-width: 768px) {
-        display: block;
-        text-align: center;
+      display: block;
+      text-align: center;
+      span {
+        color: $second-color;
       }
     }
     a {
