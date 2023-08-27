@@ -645,25 +645,25 @@ a {
   background-size: contain;
   overflow: hidden;
 }
+@media (max-width: 768px) {
+  .content .download-app {
+    height: 650px;
+  }
+  .content .download-app .app-imgs {
+    margin-top: 60px;
+  }
+}
 .content .download-app .container {
   height: 100%;
 }
 .content .download-app .container .row {
   height: 100%;
 }
-@media (max-width: 768px) {
-  .content .download-app .container .row .app-imgs {
-    display: none;
-  }
-}
 .content .download-app .container .row .img {
   height: 100%;
   display: flex;
   justify-content: center;
   position: relative;
-}
-.content .download-app .container .row .img img {
-  height: 140%;
 }
 .content .download-app .container .row .img img:nth-child(1) {
   position: absolute;
@@ -674,13 +674,13 @@ a {
 .content .download-app .container .row .img img:nth-child(2) {
   z-index: 0;
   position: absolute;
-  left: 30px;
+  left: 10px;
   top: 60px;
 }
 .content .download-app .container .row .img img:nth-child(3) {
   z-index: 0;
   position: absolute;
-  right: 30px;
+  right: 10px;
   top: 60px;
 }
 .content .download-app .container .row h3 {

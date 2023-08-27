@@ -613,22 +613,22 @@ a {
     background-image: url('../images/download-app.svg');
     background-size: contain;
     overflow: hidden;
+    @media (max-width: 768px) {
+      height: 650px;
+      .app-imgs {
+        margin-top: 60px;
+      }
+    }
     .container {
       height: 100%;
       .row {
         height: 100%;
-        .app-imgs {
-          @media (max-width: 768px) {
-            display: none;
-          }
-        }
         .img {
           height: 100%;
           display: flex;
           justify-content: center;
           position: relative;
           img {
-            height: 140%;
             &:nth-child(1) {
               position: absolute;
               left: 50%;
@@ -638,13 +638,13 @@ a {
             &:nth-child(2) {
               z-index: 0;
               position: absolute;
-              left: 30px;
+              left: 10px;
               top: 60px;
             }
             &:nth-child(3) {
               z-index: 0;
               position: absolute;
-              right: 30px;
+              right: 10px;
               top: 60px;
             }
           }
