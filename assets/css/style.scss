@@ -459,6 +459,7 @@ a {
     .feature-card {
       box-shadow: $shadow;
       background: $white-color;
+      height: 100%;
       padding: 24px 16px;
       border-radius: 16px;
       @include centerFlex();
@@ -527,8 +528,9 @@ a {
       position: absolute;
       right: -55px;
       transform: rotate(-44deg);
-      opacity: .25;
+      opacity: 0.1;
       z-index: -1;
+      filter: grayscale(1);
       @media (max-width: 768px) {
         right: initial;
         left: -50px;
@@ -566,7 +568,7 @@ a {
       }
     }
     .map-area {
-      padding:0 24px;
+      padding: 0 24px;
       @media (max-width: 768px) {
         margin-top: 40px;
       }
@@ -576,8 +578,8 @@ a {
     width: 100%;
     padding: 30px 0;
     height: 400px;
-    background: #c5ead9;
-    background-image: url('../images/download-app.svg');
+    background-image: linear-gradient(45deg, #e4fff2bf, #e6fff3),
+      url(../images/download-app.svg);
     background-size: contain;
     overflow: hidden;
     @media (max-width: 768px) {
@@ -631,7 +633,7 @@ a {
           color: $text-color;
         }
         .btns {
-          margin-top: 32px;
+          margin-top: 16px;
           display: flex;
           gap: 24px;
         }
@@ -678,12 +680,12 @@ footer {
   }
   .copy {
     p {
-      color: $main-color;
+      color: $black-color;
       margin: 0;
       display: block;
       text-align: center;
       span {
-        color: $second-color;
+        color: $main-color;
       }
     }
     a {
