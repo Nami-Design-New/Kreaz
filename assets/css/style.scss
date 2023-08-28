@@ -522,7 +522,7 @@ a {
     padding: 60px 0;
     position: relative;
     overflow-x: hidden;
-    img {
+    #img {
       width: 200px;
       position: absolute;
       right: -55px;
@@ -565,43 +565,10 @@ a {
         border-radius: 8px;
       }
     }
-    .contact-info {
-      padding: 0 60px;
+    .map-area {
+      padding:0 24px;
       @media (max-width: 768px) {
         margin-top: 40px;
-        padding: 0 20px;
-      }
-      h3 {
-        font-weight: 600;
-        color: $black-color;
-        font-size: 22px;
-      }
-      .info {
-        margin-top: 48px;
-        display: flex;
-        gap: 24px;
-        .icon {
-          @include centerFlex();
-          width: 60px;
-          i {
-            color: $main-color;
-            font-size: 20px;
-          }
-          height: 60px;
-          border-radius: 50%;
-          border: 1px solid $main-color;
-        }
-        h6 {
-          color: $black-color;
-          margin: 0;
-        }
-        a {
-          color: $text-color;
-          transition: $main-transation;
-          &:hover {
-            color: $main-color;
-          }
-        }
       }
     }
   }

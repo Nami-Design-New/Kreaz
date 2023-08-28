@@ -544,7 +544,7 @@ a {
   position: relative;
   overflow-x: hidden;
 }
-.content .contact-us img {
+.content .contact-us #img {
   width: 200px;
   position: absolute;
   right: -55px;
@@ -553,7 +553,7 @@ a {
   z-index: -1;
 }
 @media (max-width: 768px) {
-  .content .contact-us img {
+  .content .contact-us #img {
     right: initial;
     left: -50px;
     transform: rotate(44deg);
@@ -593,48 +593,13 @@ a {
   margin-top: 16px;
   border-radius: 8px;
 }
-.content .contact-us .contact-info {
-  padding: 0 60px;
+.content .contact-us .map-area {
+  padding: 0 24px;
 }
 @media (max-width: 768px) {
-  .content .contact-us .contact-info {
+  .content .contact-us .map-area {
     margin-top: 40px;
-    padding: 0 20px;
   }
-}
-.content .contact-us .contact-info h3 {
-  font-weight: 600;
-  color: #000000;
-  font-size: 22px;
-}
-.content .contact-us .contact-info .info {
-  margin-top: 48px;
-  display: flex;
-  gap: 24px;
-}
-.content .contact-us .contact-info .info .icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 1px solid #15a600;
-}
-.content .contact-us .contact-info .info .icon i {
-  color: #15a600;
-  font-size: 20px;
-}
-.content .contact-us .contact-info .info h6 {
-  color: #000000;
-  margin: 0;
-}
-.content .contact-us .contact-info .info a {
-  color: #777777;
-  transition: 0.3s ease-in-out;
-}
-.content .contact-us .contact-info .info a:hover {
-  color: #15a600;
 }
 .content .download-app {
   width: 100%;
