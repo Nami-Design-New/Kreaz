@@ -406,7 +406,9 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .leaflet-default-icon-path { /* used only in path-guessing heuristic, see L.Icon.Default */
 	background-image: url(../images/marker-icon.png);
 	}
-
+.leaflet-marker-icon {
+	width: initial !important;
+}
 
 /* attribution and scale controls */
 
